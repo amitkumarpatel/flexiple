@@ -5,11 +5,11 @@
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name,placeholder: "flexiple_rahul_jain" %>
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true,placeholder: "rahul_jain@gmail.in"  %>
   </div>
 
   <div class="field">
@@ -17,7 +17,7 @@
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off",placeholder: "FLexiple@@"  %>
   </div>
 
   <div class="field">
